@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnose That</title>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&family=Source+Serif+4&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'image image image image'
+            'box-1 box-1 box-1 box-1'
+            'box-2 box-2 box-2 box-2'
+            'box-3 box-3 box-3 box-3'
+            'head head head head'
+            'ques ques ques ques';
+            /* border: 2px solid black; */
+            font-family: 'Brygada 1918', 'serif';
+        }
+        .box-1{
+            grid-area: box-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid black; */
+        }
+        .box-2{
+            /* background-color: rgb(184, 250, 241); */
+            grid-area: box-2;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .inbox-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            /* border: 2px solid black; */
+            margin: 20px 25px;
+            /* background-color: aqua; */
+
+        } 
+        .inbox-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            /* border: 2px solid black; */
+            margin: 20px 25px;
+            /* background-color: aqua; */
+            
+        } 
+        .inbox-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            /* background-color: aqua; */
+            /* border: 2px solid black; */
+            margin: 20px 25px;
+        } 
+        .inbox-4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            /* border: 2px solid black; */
+            margin: 20px 25px;
+            /* background-color: aqua; */
+        } 
+        .image{
+            grid-area: image;
+            image-resolution: 4px;
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+            transition: all 0.9s ease-in-out .3s
+        }
+        .testImage{
+            display: flex;
+            justify-content: center;
+        }
+        .box-3{
+            grid-area: box-3;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .heading{
+           grid-area: head; 
+           display: flex;
+           justify-content: center;
+        }
+        .questionnaire{
+            grid-area: ques;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(133, 250, 211, 0.671);
+        }
+        .question{
+            font-size: large;
+        }
+        .form-check{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img src="logopic.png" alt="loading">
+        </div>
+
+        <div class="box-1">
+
+            <h2>About Lung Cancer</h2>
+
+            <p>Lung cancer is often diagnosed in the late stages of the disease, largely because there are few or no symptoms in the early stages. Having an awareness of the risks and reducing them, plus early detection, can change a person’s outcome.</p>
+
+        </div>
+        <div class="box-2">
+
+            <div class="inbox-1">
+
+                <div class="testImage">
+                    <img src="stage1.png" alt="loading">
+                </div>
+                <h3>Stage-1</h3>
+                <p>Small Tumor, minimally invasive and has not spread at all in one lung.</p>
+
+            </div>
+
+            <div class="inbox-2">
+
+                <div class="testImage">
+
+                    <img src="stage2.png" alt="loading">
+
+                </div>
+                <h3>Stage-2</h3>
+                <p>Tumor grows larger, starts to spread slightly in one lung.</p>
+
+            </div>
+
+            <div class="inbox-3">
+
+                <div class="testImage">
+
+                    <img src="stage4.png" alt="loading">
+
+                </div>
+                <h3>Stage-3</h3>
+                <p>Cancer starts to spread from the lungs to the lymph nodes and to nearby organs, like the esophagus and trachea.</p>
+
+            </div>
+
+            <div class="inbox-4">
+
+                <div class="testImage">
+
+                    <img src="stage3.png" alt="loading">
+
+                </div>
+                <h3>Stage-4</h3>
+                <p>Cancer has spread widely through the lungs and body and may affect outside organs.
+                </p>
+
+            </div>
+        </div>
+        <div class="box-3">
+            <img src="Central_Image.png" alt="loading">
+        </div>
+        <div class="heading">
+            <h2>Lung Cancer Prediction</h2>
+        </div>
+        <div class="questionnaire">
+            <div class="question">
+                <p>PLEASE SPECIFY YOUR GENDER!</p>
+                <!-- <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                  </div> -->
+            </div>
+            <div class="question">
+                <p>DO YOU SMOKE?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE YELLOW FINGERS?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU FEEL ANXIOUS?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE PEER PRESSURE?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE CHRONIC DISEASE?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE FATIGUE?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE ALLERGY?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE WHEEZE(A WHISTLING SOUND WHEN YOU BREATHE)?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU CONSUME ALCOHOL?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE COUGH?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE SHORTNESS OF BREATH?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE SHORTNESS OF BREATH?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE DIFFICULTY IN SWALLOWING?</p>
+            </div>
+            <div class="question">
+                <p>DO YOU HAVE CHEST PAIN?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
