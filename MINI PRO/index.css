@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("ABC.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    position: relative;
+}
+
+.details {
+    margin: auto;
+    width: 60%;
+    /* border: 5px solid #FFFF00; */
+    padding: 10px;
+}
+
+.greet1 {
+    font-size: 2.5rem;
+}
+
+.greet2 {
+    font-size: 2rem;
+}
+
+.first {
+    position: relative;
+    top: 1.5rem;
+}
+
+.second {
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+}
+
+.sub1 {
+    position: relative;
+    top: 6rem;
+    /* left: 2rem; */
+    right: 3rem;
+}
+
+.sub2 {
+    position: relative;
+    top: 6rem;
+    /* left: 2rem; */
+    right: 3rem;
+}
