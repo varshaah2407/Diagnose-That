@@ -14,6 +14,8 @@ As part of our MINI Project, our team created a disease prediction website which
 
 Our web app aims to predict whether the user has a certain disease or not. The prediction will be done on the basis of general questions asked in the form of multiple-choice questions. Some models will also be based on the X-ray and scan images provided by the users. The user can choose among 6 diseases and on choosing a certain disease general
 information about that disease and informative facts are provided to the user.
+
+
 <img width="1143" alt="Screenshot 2022-05-13 at 2 25 46 AM" src="https://user-images.githubusercontent.com/71224019/168166645-8c7519d3-1db0-4062-a852-922286b2ad15.png">
 
 ## Tech Stack
@@ -21,11 +23,15 @@ information about that disease and informative facts are provided to the user.
 * Front End: HTML, CSS, Bootstrap, JavaScript
 * Back End: Flask
 * ML models: Python libraries like TensorFlow, random forest, logistic regression
+
+
+Our ML MODELS
 1. Lung Cancer : XGBoost 93%
 2. Diabetes : Random Forest 80%
 3. Heart Diseases : Random Forest 88%
 4. Urinary Inflammation : Logistic Regression 100%
-5. Alzheimer's : InceptionV3 and Transfer learning 79% 6. Tuberculosis : InceptionV3 and Transfer learning 94%
+5. Alzheimer's : InceptionV3 and Transfer learning 79% 
+6. 6. Tuberculosis : InceptionV3 and Transfer learning 94%
 
 Average Accuracy : 89-90%
 
@@ -38,7 +44,7 @@ Average Accuracy : 89-90%
 | 1.     | Varshaah Karkala   | varshaah.k@somaiya.edu       | 16010120193     |
 | 2.     | Shruti Tyagi       | shruti.tyagi@somaiya.edu     | 16010120202     |
 | 3.     | Ridhiman Dhariwal  | ridhiman.dhariwal@somaiya.edu| 16010120190     |
-| 4.     | Shruti Tyagi       | pyanshi.jain@somaiya.edu     | 16010120201     |
+| 4.     | Pyanshi Jain       | pyanshi.jain@somaiya.edu     | 16010120201     |
 
 
 # Institute
