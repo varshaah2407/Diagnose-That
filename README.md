@@ -31,7 +31,7 @@ Our ML MODELS
 3. Heart Diseases : Random Forest 88%
 4. Urinary Inflammation : Logistic Regression 100%
 5. Alzheimer's : InceptionV3 and Transfer learning 79% 
-6. 6. Tuberculosis : InceptionV3 and Transfer learning 94%
+6. Tuberculosis : InceptionV3 and Transfer learning 94%
 
 Average Accuracy : 89-90%
 
