@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon_package_v0.16/site.webmanifest">
+    <link rel="icon" href="/static/favicon_package_v0.16/favicon-32x32.png" type="image/x-icon">
+    <title>Diagnose That</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'image'
+            'box-1'
+            'box-2'
+            'box-3'
+            'head'
+            'ques';
+            font-family: 'Brygada 1918', 'serif';
+        }
+        .box-1{
+            grid: box-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .box-2{
+            grid: box-2;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .inbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            margin: 20px 25px;
+            text-align: center;
+            transition: all 0.9s ease-in-out 0.5;
+        } 
+        .image{
+            grid: image;
+            image-resolution: 4px;
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        .inbox:hover{
+            transform: scale(1.1);
+        }
+        .testImage{
+            display: flex;
+            justify-content: center;
+        }
+        .heading{
+           grid: head; 
+           display: flex;
+           justify-content: center;
+        }
+        .questionnaire{
+            grid: ques;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        input[type=submit]{
+            width: 25vw;
+            margin-top: 20px;
+            height: 5vh;
+            margin-left: 35vw;
+            background-color: rgba(134, 243, 208, 0.671);
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid rgb(245, 126, 245);
+            transition: all 0.9 ease-in-out 0.5s;
+        }
+        input[type=submit]:hover{
+            transform: scale(1.2);
+            border-radius: 5px;
+            padding: 5px;
+            border: 3px solid rgb(245, 126, 245);
+            cursor: pointer;
+        }
+        .images{
+            background-size: 100% 100%;
+            /* background-position: center; */
+            /* background-size:cover; */
+            border-radius: 50%;
+            width: 170px;
+            height: 170px;
+        }
+        .x{
+            margin-left: 35vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img class="image"  src="/static/logopic.png" alt="loading">
+        </div>
+
+        <div class="box-1">
+
+            <h2>About Tuberculosis</h2>
+
+            <p>Tuberculosis (TB) is a potentially serious infectious disease that mainly affects the lungs. The bacteria that cause tuberculosis are spread from person to person through tiny droplets released into the air via coughs and sneezes.</p>
+
+        </div>
+        <div class="box-2">
+
+            <div class="inbox">
+
+                <div class="testImage">
+                    <img class="images"  src="/static/tb1.png" alt="loading">
+                </div>
+                <h3>Early Infection</h3>
+                <p>This is when the host first comes into contact with TB bacteria. If the body is strong enough, it will fight off the TB bacteria and not become infected.</p>
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img class="images"  src="/static/tb2.png" alt="loading">
+
+                </div>
+
+                <h3>Secondary TB</h3>
+                <p>When someone with Latent TB:
+                    Goes through mental, physical or emotional stress
+                    Grows older
+                    Contracts a serious disease </p>
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img class="images"  src="/static/tb3.png" alt="loading">
+
+                </div>
+                <h3>Active TB</h3>
+                <p>Tuberculosis germs can start transmitting. The tuberculosis bacteria can also travel from the lungs to other parts of the body by travelling through the bloodstream</p>
+
+            </div>
+
+        </div>
+        <div class="heading">
+
+            <h2>Tuberculosis Prediction</h2>
+
+        </div>
+
+        <form action="/predicttb" method="post" enctype="multipart/form-data">
+            <div class="questionnaire">
+                <input type="file" name="file" accept=".png, .jpg, .jpeg" class="x" value="Select your scan" required/>
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    <div>
+</body>
+</html>

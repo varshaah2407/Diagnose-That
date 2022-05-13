@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnose That</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon_package_v0.16/site.webmanifest">
+    <link rel="icon" href="/static/favicon_package_v0.16/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/nav1.css') }}">
+    <style>
+        .source{
+            background-color: rgb(242, 242, 90);
+            border-radius: 10px;
+        }
+        .source a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="china">Please choose one of the Diseases</h1>
+    <img onclick="window.location.href = '/' " class="dumbo" src="/static/favicon_package_v0.16/android-chrome-384x384.png" alt="logo" align="left">
+    <div class="avatar">
+        <img src="/static/hrt.jpeg" class="avatar__image">
+        <center class="source">
+            <a href="/predictdisease"><h1>Heart Diseases</h1></a>
+        </center>
+
+    </div>
+    <div class="avatar">
+        <img src="/static/lung.png" class="avatar__image">
+        <center class="source">
+            <a href="/predictlung">
+                <h1>Lung Cancer</h1>
+            </a>
+        </center>
+    </div>
+    <div class="avatar">
+        <img src="/static/tb.png" class="avatar__image">
+        <center class="source">
+            <a href="/predicttb">
+                <h1>Tuberculosis</h1>
+            </a>
+        </center>
+    </div>
+    <div class="avatar">
+        <img src="/static/b.jpeg" class="avatar__image">
+        <center class="source">
+            <a href="/predictbrain">
+                <h1>Alzheimers</h1>
+            </a>
+        </center>
+    </div>
+    <div class="avatar">
+        <img src="/static/kid.jpeg" class="avatar__image">
+        <center class="source">
+            <a href="/predicturinary">
+                <h1>Urinary Diseases</h1>
+            </a>
+        </center>
+    </div>
+    <div class="avatar">
+        <img src="/static/d.png" class="avatar__image">
+        <center class="source">
+            <a href="/predictdiabetes">
+                <h1>Diabetes</h1>
+            </a>
+        </center>
+    </div>
+    {{message}}
+</body>
+
+</html>
